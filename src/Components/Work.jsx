@@ -1,6 +1,6 @@
 import React from 'react'
 import RealEstate from '../Assests/realestate.jpg'
-import WorkImg from '../Assets/worklmg.jpeg'
+import WorkImg from '../Assets/workImg.jpeg'
 
 
 const Work = () => {
