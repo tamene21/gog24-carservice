@@ -1,6 +1,6 @@
-import React from 'react'
-import RealEstate from '../Assests/realestate.jpg'
-import WorkImg from '../Assets/workImg.jpeg'
+import React from 'react';
+import RealEstate from '../Assets/realestate.jpg';
+import WorkImg from '../Assets/workImg.jpeg';
 
 
 const Work = () => {
