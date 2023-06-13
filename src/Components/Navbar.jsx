@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from '../Assets/gog24.png'
+import Logo from '../Assets/logoweb.png'
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs' 
@@ -9,20 +9,17 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className='Fixed w-f h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
-      <div>
-        <img src={Logo} alt='logo image' style={{width:'50px', borderRadius:'50%'}}></img>
-      </div>
+    <div className='Fixed w-f h-[50px] flex justify-end px-4 bg-[#252424] text-center text-white'>
       {/*menu*/}
-      <ul className='hidden md:flex'>
-        <li>
-          <Link to="home" smooth={true} duration={500} >Home</Link></li>
+      <ul className='hidden md:flex  items-center'>
+        <li><Link to="home" smooth={true} duration={500} >Home</Link></li>
         <li><Link to="about" smooth={true} duration={500} > About </Link></li>
         <li><Link to="skills" smooth={true} duration={500} > Cars </Link></li>
         <li><Link to="work" smooth={true} duration={500} > Blogs </Link></li>
         <li><Link to="contact" smooth={true} duration={500} > Contact </Link></li>
+        <li className='bg-[#ffd73f] text-center'><Link to="driver" smooth={true} duration={500} > Became A Driver </Link></li>
       </ul>
-      {/*Hamburger*/}
+      {/*dinamic*/}
       <div onClick ={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
@@ -49,13 +46,13 @@ const Navbar = () => {
         <ul>
           <li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0f3773]'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href='/'>
+            href='https://www.linkedin.com/in/tamenegelaye' target="_blank">
               Linkedin <FaLinkedin size={30}/>
             </a>
           </li>
           <li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333]'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href='/'>
+            href='https://github.com/tamene21' target='_blank'>
               Github <FaGithub size={30}/>
             </a>
           </li>
@@ -67,7 +64,7 @@ const Navbar = () => {
           </li>
           <li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#938484]'>
             <a className='flex justify-between items-center w-full text-gray-300'
-            href='/'>
+            href='https://drive.google.com/file/d/1gEXG4GZflAcVGtLipmwpY1lUp1Qr8hMT/view?usp=sharing' target='_blank'>
               Resume <BsFillPersonLinesFill size={30}/>
             </a>
           </li>

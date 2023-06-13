@@ -1,23 +1,28 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import car from '../Assets/car1.png'
+
 
 const Home = () => {
   return (
-    <div name = 'home' className='w-full h-screen bg-[#0a192f]'>
-        {/*Container*/}
-        <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-            <p className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] '>Earn. Connect.</p>
-            <p className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] '>Contribute to</p>
-            <p className='text-4xl sm:text-7xl font-bold text-[#ccd6f6] '>Society </p>
-            <p className='text-2xl sm:text-2xl text-[#8a8f9f] py-6'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in nisl ac elit vestibulum euismod. Donec et diam sem. Curabitur eget aliquet nulla, eget fringilla odio. Phasellus sodales, leo sed scelerisque mattis, quam justo interdum nibh, sit amet vulputate nibh nisl nec tellus. Aenean non dapibus mi.
-            </p>
-            <div>
-                <button className='px-6 py-3 group my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 text-white md:resize border-2 font-bold]'>Explore more
-                    <span className='group-hover:rotate-90 duration-300'>
-                        <HiArrowNarrowRight className='ml-2'/>
-                    </span> 
-                </button>
+    
+    <div name = 'home' className='flex w-full h-full'>
+        <div className='w-full h-screen grid sm:grid-cols-2 '> 
+            <div className='max-w-[1000px] grid px-4 gap-1 items-center py-6 grid-cols-1 bg-[#ffd73f] rounded-br-[30%] '>
+                <p className='sm:text-right text-4xl font-bold'>Earn. Connect.<br />Contribute to <br />Society </p>
+                <p className='sm:text-right text-[12px] font-bold'>
+                    Partner with Us to drive your Livelyhood and many more!.
+                </p>
+                <div>
+                    <button className='group flex items-center hover:bg-pink-600 hover:border-pink-600 text-white bg-[#272626] md:resize border-2 font-bold]'>Sign Up Now
+                        <span className='group-hover:rotate-90 duration-300'>
+                            <HiArrowNarrowRight className='ml-2'/>
+                        </span> 
+                    </button>
+                </div>
+            </div>
+            <div className='mx-auto max-w-[1000px] w-full h-screen justify-center items-center sm:grid-cols-2 gap-8 px-2'> 
+                <img src={car} alt='car for Home'></img>
             </div>
         </div>
     </div>
