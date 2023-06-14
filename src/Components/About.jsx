@@ -1,6 +1,9 @@
 import React from "react";
 
 const About = () => {
+  {
+    /*Information section about the project */
+  }
   return (
     <div name="about" className="w-full h-screen bg-gray-100 text-black">
       <div className="flex flex-col justify-center items-center w-full h-full">

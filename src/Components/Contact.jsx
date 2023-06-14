@@ -1,5 +1,7 @@
 import React from "react";
-
+{
+  /*Contact section*/
+}
 const Contact = () => {
   return (
     <div
@@ -19,6 +21,7 @@ const Contact = () => {
             Submit the form below or shoot me an email - myemail@gmail.com
           </p>
         </div>
+        {/*Needed input information*/}
         <input
           className="bg-[#ccd6f6] p-2"
           type="text"
@@ -37,6 +40,7 @@ const Contact = () => {
           rows="10"
           placeholder="Message"
         ></textarea>
+        {/*A button to submitt the form*/}
         <button className="text-black border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Ride
         </button>
