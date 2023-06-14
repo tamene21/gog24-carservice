@@ -24,3 +24,7 @@ The WebApp is compatible with devices of all sizes and all OS's, and consistent 
 # Team
 
 - [Tamene Gelaye](https://github.com/tamene21)
+
+# License
+
+ALX &copy; [Tamene Gelaye](https://www.linkedin.com/in/tamenegelaye)
